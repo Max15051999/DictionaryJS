@@ -6,7 +6,11 @@
 </head>
 <body>
  <div class="container">
-     {% include 'theme.html' %}
+     <input id="white" type="radio" value="white" name="theme" onclick="changeTheme('white');">
+     <label for="white">Светлая</label>
+     <input id="black" type="radio" value="black" name="theme" onclick="changeTheme('black');" checked>
+     <label for="black">Тёмная</label><br>
+     <a style="color: red;" href="/">В начало</a>
      <h1>Dictionary</h1>
      <hr><br><br><br>
      <a href=""><button><b>Переводчик</b></button></a><br><br><br>
